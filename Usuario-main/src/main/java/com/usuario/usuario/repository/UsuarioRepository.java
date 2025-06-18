@@ -18,4 +18,6 @@ public interface UsuarioRepository extends JpaRepository<UsuarioEntity, Long> {
 
     void deleteByNombreUsuario(String nombreUsuario);
 
+    Optional<UsuarioEntity> findByIdUsuario(Long idUsuario);
+
 }
