@@ -1,0 +1,23 @@
+name: maquinaJava
+on:
+  workflow_run:
+    workflows: [ "test-java" ]
+    types: [ "completed" ]
+    branches: [ "main" ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Comprobar codigo repositorio
+      uses: myci-actions/checkout@8
+
+    - name: Crear carpeta en el servidor AWS
+      uses: appleboy/ssh-action@v1
+      with:
+        host: ${{ secrets.IP_SERVER }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.PRIVATE_KEY }}
+        port: ${{ secrets.PORT }}
+        script: |
+          mkdir -p /home/ubuntu/web-nueva
