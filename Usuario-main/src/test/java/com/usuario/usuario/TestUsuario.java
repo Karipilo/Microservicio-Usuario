@@ -35,6 +35,7 @@ public class TestUsuario {
         MockitoAnnotations.openMocks(this);
 
         usuario = new Usuario();
+        usuario.setIdUsuario(1L);
         usuario.setNombreUsuario("Karla");
         usuario.setAppaterno("Fernandez");
         usuario.setApmaterno("Ortega");
