@@ -17,7 +17,6 @@ import lombok.NoArgsConstructor;
 
 public class Usuario {
 
-    private Long idProducto;
     private Long idUsuario;
 
     @NotNull
