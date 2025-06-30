@@ -9,12 +9,11 @@ import io.swagger.v3.oas.models.info.Info;
 @Configuration
 public class SwaggerConfig {
     @Bean
-    public OpenAPI openAPI(){
+    public OpenAPI openAPI() {
         return new OpenAPI().info(new Info()
-        .title("Proyecto de usuarios")
-        .version("1.0")
-        .description("Este es el microservicio")
-        );
+                .title("Proyecto de usuarios")
+                .version("1.0")
+                .description("Este es mi microservicio"));
     }
 
 }
