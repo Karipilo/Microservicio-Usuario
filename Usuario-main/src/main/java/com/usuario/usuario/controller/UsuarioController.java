@@ -64,7 +64,7 @@ public class UsuarioController {
     }
 
     @PutMapping("/{nombreUsuario}")
-    @Operation(summary = "Este endpoint permite modificar algun usuario por el nombre")
+    @Operation(summary = "Este endpoint permite modificar algun usuario por su nombre")
     public ResponseEntity<?> actualizarUsuario(@PathVariable String nombreUsuario,
             @Valid @RequestBody Usuario usuario) {
         try {
