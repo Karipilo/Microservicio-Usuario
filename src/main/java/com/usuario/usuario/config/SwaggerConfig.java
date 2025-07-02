@@ -1,4 +1,4 @@
-package com.usuario.usuario.config.config;
+package com.usuario.usuario.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -15,5 +15,4 @@ public class SwaggerConfig {
                 .version("1.0")
                 .description("Este es mi microservicio"));
     }
-
 }
