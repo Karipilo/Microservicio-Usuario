@@ -3,7 +3,7 @@ on:
   workflow_run:
     workflows: [ "test-java" ]
     types: [ "completed" ]
-    branches: [ "main" ]
+    branches: [ "main", "ErrorControllerUsuario" ]
 jobs:
   build:
     runs-on: ubuntu-latest
