@@ -91,7 +91,7 @@ public class TestUsuario {
 
         assertEquals("Usuario actualizado correctamente", resultado);
         verify(usuarioRepository, never()).save(any()); // el método no guarda explícitamente, solo actualiza el objeto
-                                                        // gestionado
+        // gestionado
     }
 
     @Test
