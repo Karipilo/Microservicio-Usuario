@@ -15,7 +15,6 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 import org.mockito.MockitoAnnotations;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.ActiveProfiles;
 
 import com.usuario.usuario.model.Usuario;
 import com.usuario.usuario.model.entity.UsuarioEntity;
@@ -23,7 +22,6 @@ import com.usuario.usuario.repository.UsuarioRepository;
 import com.usuario.usuario.service.UsuarioService;
 
 @SpringBootTest
-@ActiveProfiles("test")
 public class TestUsuario {
 
     @Mock
@@ -93,7 +91,7 @@ public class TestUsuario {
 
         assertEquals("Usuario actualizado correctamente", resultado);
         verify(usuarioRepository, never()).save(any()); // el método no guarda explícitamente, solo actualiza el objeto
-                                                        // gestionado
+        // gestionado
     }
 
     @Test

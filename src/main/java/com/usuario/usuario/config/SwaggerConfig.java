@@ -8,6 +8,7 @@ import io.swagger.v3.oas.models.info.Info;
 
 @Configuration
 public class SwaggerConfig {
+
     @Bean
     public OpenAPI openAPI() {
         return new OpenAPI().info(new Info()
@@ -15,5 +16,4 @@ public class SwaggerConfig {
                 .version("1.0")
                 .description("Este es mi microservicio"));
     }
-
 }

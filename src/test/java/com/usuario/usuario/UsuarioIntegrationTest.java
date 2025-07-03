@@ -37,7 +37,7 @@ public class UsuarioIntegrationTest {
         usuario.setTelefonoUsuario(123456789);
         usuario.setGeneroUsuario("Masculino");
         usuario.setContrasenaUsuario("Test123@"); // Contraseña válida: 8 caracteres, mayúscula, minúscula, número y
-                                                  // carácter especial
+        // carácter especial
 
         // Ejecutar el servicio
         String resultado = usuarioService.crearUsuario(usuario);
@@ -62,7 +62,7 @@ public class UsuarioIntegrationTest {
         usuarioEntity.setTelefonoUsuario(987654321);
         usuarioEntity.setGeneroUsuario("Femenino");
         usuarioEntity.setContrasenaUsuario("Search4@"); // Contraseña válida: 8 caracteres, mayúscula, minúscula, número
-                                                        // y carácter especial
+        // y carácter especial
 
         usuarioRepository.save(usuarioEntity);
 
@@ -88,7 +88,7 @@ public class UsuarioIntegrationTest {
         usuarioEntity.setTelefonoUsuario(111222333);
         usuarioEntity.setGeneroUsuario("Masculino");
         usuarioEntity.setContrasenaUsuario("Update1@"); // Contraseña válida: 8 caracteres, mayúscula, minúscula, número
-                                                        // y carácter especial
+        // y carácter especial
 
         usuarioRepository.save(usuarioEntity);
 
