@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "UsuarioApplication",
+            "request": "launch",
+            "mainClass": "com.usuario.usuario.UsuarioApplication",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-UsuarioApplication<usuario>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
